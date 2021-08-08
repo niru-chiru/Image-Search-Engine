@@ -47,7 +47,7 @@ export const getImageSearchList = (payload) => async (dispatch) => {
   let header = authHeader();
   let res = await get(url, header);
   if (res && res.status === 200) {
-    success("Images fetched successgully");
+    success("Images fetched successfully");
     dispatch({
       type: GET_IMAGES_SUCCESS,
       payload: res.data.hits,

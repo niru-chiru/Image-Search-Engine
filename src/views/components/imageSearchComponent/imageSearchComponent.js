@@ -2,6 +2,7 @@ import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 import ImageCard from "../ImageCard/imageCard";
 import { Grid } from "@material-ui/core";
+import { getSafe } from "../../Helpers/utils";
 
 const styles = (theme) => ({
   root: {
@@ -23,11 +24,17 @@ const ImageSearchComponent = (props) => {
    * @type {function}
    * @return {Object}
    */
-  const images = ImageList.map((item, index) => (
-    <Grid item lg={4} sm={4} md={4} xs={12}>
-      <ImageCard key={index} imageurl={item.largeImageURL} title={item.tags} />{" "}
-    </Grid>
-  ));
+  const images =
+    ImageList.length > 0 &&
+    ImageList.map((item, index) => (
+      <Grid item lg={4} sm={4} md={4} xs={12}>
+        <ImageCard
+          key={index}
+          imageurl={getSafe(item.largeImageURL)}
+          title={getSafe(item.tags)}
+        />{" "}
+      </Grid>
+    ));
 
   return (
     <div className={classes.root}>
