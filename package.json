@@ -1,0 +1,65 @@
+{
+  "name": "image-search-engine",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "eslint": "^7.32.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-material-ui-form-validator": "^2.1.4",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "redux-thunk": "^2.3.0",
+    "toastr": "^2.1.4",
+    "web-vitals": "^1.1.2"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^4.2.5",
+    "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-fix",
+      "pre-push": "npm run lint-fix"
+    }
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "format": "prettier --write src/*/.{js,jsx}",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint-fix": "eslint --ext .jsx --ext .js --fix src/",
+    "lint-show": "eslint --ext .jsx --ext .js src/"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
