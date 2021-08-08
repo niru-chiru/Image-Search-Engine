@@ -11,7 +11,6 @@ const state = {
 const isLoading = false;
 const handleSubmit = () => {};
 const handlImageSearch = () => {};
-const ImageList = [];
 it("matches snapshot", () => {
   const { asFragment } = render(
     <SearchComponent

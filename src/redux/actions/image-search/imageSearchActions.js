@@ -1,11 +1,7 @@
 import { get } from "../baseApi";
 import { authHeader } from "../AxiosHeader";
 import UrlConfig from "./urlConfig";
-import {
-  error,
-  success,
-  warning,
-} from "../../../views/components/Error/alertView";
+import { error, success } from "../../../views/components/Error/alertView";
 
 /**
  * Action Types
