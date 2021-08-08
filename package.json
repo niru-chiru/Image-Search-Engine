@@ -2,7 +2,6 @@
   "name": "image-search-engine",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://niru-chiru.github.io/Image-Search-Engine",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/lab": "^4.0.0-alpha.60",
@@ -45,8 +44,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint-fix": "eslint --ext .jsx --ext .js --fix src/",
-    "lint-show": "eslint --ext .jsx --ext .js src/",
-    "deploy": "gh-pages -d build"
+    "lint-show": "eslint --ext .jsx --ext .js src/"
   },
   "eslintConfig": {
     "extends": [
